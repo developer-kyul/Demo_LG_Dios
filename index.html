@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objet</title>
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/easing.js"></script>
+
+</head>
+<body>
+
+<div class="posNum"></div>
+
+<button class="startPoint"></button>
+
+<section id="container">
+    <section id="section01">
+        <div class="trigger_this_01">
+            <div class="fix_this_1">
+                <div class="main_bg">
+                    <div><img src="image/section01/1_living_room/bg_line.png" alt=""></div>
+                    <div class="main_img01"><img src="image/section01/1_living_room/main01.png" alt=""></div>
+                    <!-- <div class="main_img01"><img src="image/section01/4_room/room_main.png" alt=""></div> -->
+                </div>
+                
+                <!--식물-->
+                <div class="plant_box_left" style="display:none">
+                    <div class="left_plant1"><img src="image/section01/1_living_room/left_plant/left_up_plant.png" alt=""></div>
+                    <div class="left_plant2"><img src="image/section01/1_living_room/left_plant/left_middle_plant.png" alt=""></div>
+                    <div class="left_plant3"><img src="image/section01/1_living_room/left_plant/left_bottom_plant.png" alt=""></div>
+                    <div class="left_plant4"><img src="image/section01/1_living_room/left_plant/bottom_plant1.png" alt=""></div>
+                    <div class="left_plant5"><img src="image/section01/1_living_room/left_plant/bottom_plant2.png" alt=""></div>
+                </div>
+
+                <div class="plant_box_right" style="display:none">
+                    <div><img class="right_plant1"
+                              src="image/section01/1_living_room/right_plant/right_big_plant.png" alt=""></div>
+                    <div><img class="right_plant2" src="image/section01/1_living_room/right_plant/right_plant.png"
+                              alt=""></div>
+                    <div><img class="right_plant3" src="image/section01/1_living_room/right_plant/pink_flower.png"
+                              alt=""></div>
+                    <div><img class="right_plant4" src="image/section01/1_living_room/right_plant/lily.png" alt="">
+                    </div>
+                </div>
+                <!--//식물-->
+
+                <div class="fix_title">
+                    <img src="image/section01/1_living_room/fix_tittle.png" alt="">
+                </div>
+
+                <div class="main_btn">
+                    <img src="image/section01/1_living_room/button01.png" alt="">
+                    <img src="image/section01/1_living_room/button02.png" alt="">
+                    <img src="image/section01/1_living_room/button03.png" alt="">
+                    <img src="image/section01/1_living_room/button04.png" alt="">
+                </div>
+
+
+                <!--키친-->
+                <div class="kitchen_box" style="display: none;">
+                    <div class="kitchen_box_left">
+                        <div class="left_kitchen1"><img src="image/section01/2_kitchen/lemon.png" alt=""></div>
+                        <div class="left_kitchen2"><img src="image/section01/2_kitchen/mug.png" alt=""></div>
+                        <div class="left_kitchen3"><img src="image/section01/2_kitchen/left_plate.png" alt=""></div>
+                        <div class="left_kitchen4"><img src="image/section01/2_kitchen/apple.png" alt=""></div>
+                        <div class="left_kitchen5"><img src="image/section01/2_kitchen/orange.png" alt=""></div>
+                    </div>
+                    <div class="kitchen_box_right">
+                        <div class="right_kitchen1"><img src="image/section01/2_kitchen/eggplant.png" alt=""></div>
+                        <div class="right_kitchen2"><img src="image/section01/2_kitchen/knife.png" alt=""></div>
+                        <div class="right_kitchen3"><img src="image/section01/2_kitchen/right_plate.png" alt=""></div>
+                        <div class="right_kitchen4"><img src="image/section01/2_kitchen/teapot.png" alt=""></div>
+                    </div>
+                </div>
+                <!--키친-->
+
+                <!-- 물방울 -->
+                <div class="laundry_box" style="display: none;">
+                    <div class="laundry_box_left">
+                        <div class="left_laundry1"><img src="image/section01/3_laundry/left_up_bubble.png" alt=""></div>
+                        <div class="left_laundry2"><img src="image/section01/3_laundry/left_bubble1.png" alt=""></div>
+                        <div class="left_laundry3"><img src="image/section01/3_laundry/button_side_bubble.png" alt=""></div>
+                        <div class="left_laundry4"><img src="image/section01/3_laundry/left_cushion.png" alt=""></div>
+                        <div class="left_laundry5"><img src="image/section01/3_laundry/cushion_side_bubble1.png" alt=""></div>
+                        <div class="left_laundry6"><img src="image/section01/3_laundry/cushion_side_bubble2.png" alt=""></div>
+                        <div class="left_laundry7"><img src="image/section01/3_laundry/left_laundry_bubble1.png" alt=""></div>
+                        <div class="left_laundry8"><img src="image/section01/3_laundry/bottom_bubble.png" alt=""></div>
+                        <div class="left_laundry9"><img src="image/section01/3_laundry/left_laundry_bubble1.png" alt=""></div>
+                    </div>
+
+                    <div class="room_box_right">
+                        <div class="right_laundry"><img src="image/section01/3_laundry/tittle_back_bubble.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/up_cushion.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/laundry_button_bubble1.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/laundry_button_bubble2.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/right_bubble.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/right_cushion.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/right_down_bubble.png" alt=""></div>
+                        <div class="right_laundry"><img src="image/section01/3_laundry/right_up_laundry_bubble1.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- //물방울 -->
+
+                <!-- 깃털 -->
+                <div class="room_box">
+                    <div class="room_box_left">
+                        <div class="left_room1"><img src="image/section01/4_room/tittle_back_feather.png" alt=""></div>
+                        <div class="left_room2"><img src="image/section01/4_room/left_feather.png" alt=""></div>
+                        <div class="left_room3"><img src="image/section01/4_room/button_back_feather.png" alt=""></div>
+                        <div class="left_room4"><img src="image/section01/4_room/left_middle_feather.png" alt=""></div>
+                        <div class="left_room5"><img src="image/section01/4_room/bottom_feather.png" alt=""></div>
+                        <div class="left_room6"><img src="image/section01/4_room/middle_down_feather.png" alt=""></div>
+                    </div>
+
+                    <div class="room_box_right">
+                        <div class="right_room1"><img src="image/section01/4_room/rignt_middle_feather.png" alt=""></div>
+                        <div class="right_room2"><img src="image/section01/4_room/right_up_feather.png" alt=""></div>
+                        <div class="right_room3"><img src="image/section01/4_room/right_feather.png" alt=""></div>
+                        <div class="right_room4"><img src="image/section01/4_room/bottom_big_feather.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+                <!-- //깃털 -->
+
+            </div>
+        </div>
+    </section>
+
+    <!--가로페이지-->
+    <section id="section02">
+        <div class="trigger_this_02">
+            <div class="fix_this_2">
+                <div class="xScroll2">
+                    <div class="scroll_page01">
+                        <div class="scroll_page01">
+                            <div class="page01_box">
+                                <img class="page01_bg" src="image/section02/page01/video.png" alt="">
+                                <img class="page01_top_txt" src="image/section02/page01/turnyour.png" alt="">
+                                <img class="page01_bottom_txt" src="image/section02/page01/moodup.png" alt="">
+                                <img class="page01_long_txt" src="image/section02/page01/long_txt.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll_page02">
+                        <div class="page02_box">
+                            <!-- 냉장고 그 이상 -->
+                            <img class="page02_big_title" src="image/section02/page02/tittle01.png" alt="">
+                            <img class="page02_small_title" src="image/section02/page02/text01.png" alt="">
+                            <div class="page02_refrigerator_box">
+                                <img src="image/section02/page02/green.png" alt="">
+                            </div>
+                            <div class="page02_color_title_box">
+                                <div><img src="image/section02/page02/green2.png" alt=""></div>
+                                <div><img src="image/section02/page02/red2.png" alt=""></div>
+                                <div><img src="image/section02/page02/brown2.png" alt=""></div>
+                                <div><img src="image/section02/page02/mint2.png" alt=""></div>
+                                <div><img src="image/section02/page02/pink2.png" alt=""></div>
+                            </div>
+
+                            <!-- LG가 선보인 세상에 없던 신가전 -->
+                            <img class="page02_second_txt1" src="image/section02/page02/tittle02.png" alt="">
+                            <img class="page02_second_txt2" src="image/section02/page02/tittle03.png" alt="">
+                            <img class="page02_second_txt3" src="image/section02/page02/tittle04.png" alt="">
+                            <img class="page02_second_txt4" src="image/section02/page02/lg_objet_logo.png" alt="">
+                            <img class="page02_second_txt5" src="image/section02/page02/text02.png" alt="">
+
+                            <img class="page02_moodup1" src="image/section02/page02/moodup1.png" alt="">
+                            <img class="page02_moodup2" src="image/section02/page02/moodup2.png" alt="">
+                            <img class="page02_letter" src="image/section02/page02/Interchangeable_Color_Panels.png"
+                                 alt="">
+                        </div>
+                    </div>
+
+                    <div class="scroll_page03">
+                        <div class="page03_box">
+                            <!--color collection-->
+                            <img src="image/section02/page03/color_main.png" alt="">
+
+                            <img class="color_collection_tittle_en"
+                                 src="image/section02/page03/color_collection_tittle_en.png" alt="">
+                            <img class="mini_video" src="image/section02/page03/mini_video.png" alt="">
+                            <img class="text01" src="image/section02/page03/text01.png" alt="">
+
+                            <img class="color_sub" src="image/section02/page03/color_sub.png" alt="">
+                            <img class="text02" src="image/section02/page03/text02.png" alt="">
+                            <img class="tittle_kor" src="image/section02/page03/tittle_kor.png" alt="">
+                            <img class="Music_is_always_by_my_side"
+                                 src="image/section02/page03/Music_is_always_by_my_side.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="scroll_page04">
+                        <div class="page04_box">
+                            <!--music collection-->
+                            <img class="music_main" src="image/section02/page04/music_main.png" alt="">
+
+                            <img class="music_collection_en" src="image/section02/page04/music_collection_en.png"
+                                 alt="">
+                            <img class="text1" src="image/section02/page04/text1.png" alt="">
+                            <img class="music_mini_video" src="image/section02/page04/music_mini_video.png" alt="">
+
+                            <img class="sub_image" src="image/section02/page04/sub_image.png" alt="">
+                            <img class="tittle_kor" src="image/section02/page04/tittle_kor.png" alt="">
+                            <img class="text2" src="image/section02/page04/text2.png" alt="">
+
+                            <img class="circle_text_big" src="image/section02/page04/circle_text_big.png" alt="">
+                            <img class="circle_text_small" src="image/section02/page04/circle_text_small.png" alt="">
+
+                            <img class="left_phone" src="image/section02/page04/left_phone.png" alt="">
+                            <img class="right_phone" src="image/section02/page04/right_phone.png" alt="">
+
+                            <img class="voice_assistant" src="image/section02/page04/voice_assistant.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="scroll_page05">
+                        <div class="page05_box">
+                            <!--voice collection-->
+                            <img class="voice_main" src="image/section02/page05/voice_main.png" alt="">
+
+                            <img class="voice_assistant_en" src="image/section02/page05/voice_assistant_en.png" alt="">
+                            <img class="text01" src="image/section02/page05/text01.png" alt="">
+                            <img class="small_video" src="image/section02/page05/small_video.png" alt="">
+
+                            <img class="phone" src="image/section02/page05/phone.png" alt="">
+                            <img class="left_blah" src="image/section02/page05/left_blah.png" alt="">
+                            <img class="right_blah" src="image/section02/page05/right_blah.png" alt="">
+
+                            <img class="circle01" src="image/section02/page05/circle01.png" alt="">
+                            <img class="circle02" src="image/section02/page05/circle02.png" alt="">
+                            <img class="circle03" src="image/section02/page05/circle03.png" alt="">
+                            <img class="circle04" src="image/section02/page05/circle04.png" alt="">
+                            <img class="circle05" src="image/section02/page05/circle05.png" alt="">
+
+                            <img class="tittle_kor" src="image/section02/page05/tittle_kor.png" alt="">
+                            <img class="text02" src="image/section02/page05/text02.png" alt="">
+
+                            <div class="letter_box">
+                                <div><img src="image/section02/page05/letter_move01.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move02.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move03.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move04.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move05.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move06.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move07.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move08.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move09.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move10.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move11.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move12.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move13.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move14.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move15.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move16.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move17.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move18.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move19.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move20.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move21.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move22.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move23.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move24.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move25.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move26.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move27.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move28.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move29.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move30.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move31.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move32.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move33.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move34.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move35.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move36.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move37.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move38.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move39.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move40.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move41.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move42.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move43.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move44.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move45.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move46.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move47.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move48.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move49.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move50.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move51.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move52.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move53.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move54.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move55.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move56.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move57.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move58.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move59.png" alt=""></div>
+                                <div><img src="image/section02/page05/letter_move60.png" alt=""></div>
+                            </div>
+
+                            <img class="big_video" src="image/section02/page05/big_video.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section03">
+
+        <div class="cube01">
+
+            <div class="box01"></div>
+
+        </div>
+
+
+    </section>
+    <section id="section04"></section>
+    <section id="section05"></section>
+
+
+</section>
+
+
+<script src="js/plugin/gsap.js"></script>
+<script src="js/plugin/scrollTrigger.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
