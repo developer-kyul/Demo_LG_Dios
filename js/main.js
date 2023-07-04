@@ -31,21 +31,76 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //loop move
     gsap.to('.left_plant1',{ //선택자
-        rotate: -20, //구동
-        duration: 3, //시간
+        rotate: -2, //구동
+        duration: 4, //시간
         yoyo: true, //왕복
         ease: 'none', //가속도
         repeat: -1 //반복
     })
 
     gsap.to('.left_plant2',{
-        rotate: 20,
-        duration: 3,
+        rotate: -2,
+        duration: 4,
         yoyo: true,
         ease: 'none',
         repeat: -1
     })
 
+    gsap.to('.left_plant3',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
+
+    gsap.to('.left_plant4',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
+
+    gsap.to('.left_plant5',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
+
+    gsap.to('.right_plant1',{ //선택자
+        rotate: -2, //구동
+        duration: 4, //시간
+        yoyo: true, //왕복
+        ease: 'none', //가속도
+        repeat: -1 //반복
+    })
+
+    gsap.to('.right_plant2',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
+
+    gsap.to('.right_plant3',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
+
+    gsap.to('.right_plant4',{
+        rotate: -2,
+        duration: 4,
+        yoyo: true,
+        ease: 'none',
+        repeat: -1
+    })
 
     /*  slide,click event section */
     gsap.to('.fix_this_1', { //대상
@@ -69,7 +124,7 @@ window.addEventListener('DOMContentLoaded', function () {
         scrub: 1,
     });
                  //('선택자',{구동},듀레이션(0~1))
-    se01_move01.to("#section01 .plant_box_right .right_plant1",{x:200,y:500},0.2);
+    se01_move01.to("#section01 .plant_box_right .right_plant1",{x:200,y:1000,z:0},0.2);
     se01_move01.to("#section01 .plant_box_right .right_plant2",{x:150,y:700},0.15);
     se01_move01.to("#section01 .plant_box_right .right_plant3",{x:300,y:400},0.3);
     se01_move01.to("#section01 .plant_box_right .right_plant4",{x:300,y:400},0.4);
@@ -87,23 +142,14 @@ window.addEventListener('DOMContentLoaded', function () {
         end: "8500px bottom", //기준점 브라우저
         scrub: 1,
     });
+
     //('선택자',{구동},듀레이션(0~1))
     sc01_scale01.to("#section01 .main_bg",{scale:0.8},0);
+
 
     let sc01_scale02 = gsap.timeline();
     ScrollTrigger.create({
         animation: sc01_scale02,
-        trigger: "#section01", //기준
-        start: "9000px top", //기준점 브라우저
-        end: "12000px bottom", //기준점 브라우저
-        scrub: 1,
-    });
-    //('선택자',{구동},듀레이션(0~1))
-    sc01_scale02.to("#section01 .main_bg",{scale:1},0);
-
-    let sc01_scale03 = gsap.timeline();
-    ScrollTrigger.create({
-        animation: sc01_scale03,
         trigger: "#section01", //기준
         start: "9000px top", //기준점 브라우저
         end: "12000px bottom", //기준점 브라우저
@@ -115,10 +161,161 @@ window.addEventListener('DOMContentLoaded', function () {
         onLeave: ()=>{
             $('.fix_this_1').css('background','#c98181')
             $('#section01 .main_bg .main_img01 img').attr('src',`../image/section01/2_kitchen/kitchen_main.png`)
+            // $('#section01 .left_plant1 img').attr('src',`../image/section01/2_kitchen/lemon.png`)
+        }
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_scale02.to("#section01 .main_bg",{scale:1},0);
+
+    let sc01_kitchen_move = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_kitchen_move,
+        trigger: "#section01", //기준
+        start: "11000px top", //기준점 브라우저
+        end: "12000px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_kitchen_move.to("#section01 .kitchen_box_left .left_kitchen1",{x:0, y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_left .left_kitchen2",{x:0, y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_left .left_kitchen3",{x:0, y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_left .left_kitchen4",{x:0, y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_left .left_kitchen5",{x:0, y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_right .right_kitchen1",{x:0,y:0,z:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_right .right_kitchen2",{x:0,y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_right .right_kitchen3",{x:0,y:0},0);
+    sc01_kitchen_move.to("#section01 .kitchen_box_right .right_kitchen4",{x:0,y:240},0);
+
+
+    let sc01_scale03 = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_scale03,
+        trigger: "#section01", //기준
+        start: "14000px top", //기준점 브라우저
+        end: "17000px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_scale03.to("#section01 .main_bg",{scale:0.66},0);
+    sc01_scale03.to("#section01 .left_kitchen1",{y:-300},0);
+    sc01_scale03.to("#section01 .left_kitchen2",{x:0, y:980},0);
+    sc01_scale03.to("#section01 .left_kitchen3",{x:-200, y:0},0);
+    sc01_scale03.to("#section01 .left_kitchen4",{x:-400, y:600},0);
+    sc01_scale03.to("#section01 .left_kitchen5",{x:200,y:600},0);
+    sc01_scale03.to("#section01 .right_kitchen1",{x:0, y:-120},0);
+    sc01_scale03.to("#section01 .right_kitchen2",{x:600, y:-600},0);
+    sc01_scale03.to("#section01 .right_kitchen3",{x:600, y:-600},0);
+    sc01_scale03.to("#section01 .right_kitchen4",{y:600},0);
+
+
+
+    let sc01_scale04 = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_scale04,
+        trigger: "#section01", //기준
+        start: "17500px top", //기준점 브라우저
+        end: "21500px bottom", //기준점 브라우저
+        scrub: 1,
+        onEnterBack: ()=>{
+            $('.fix_this_1').css('background','#c98181')
+            $('#section01 .main_bg .main_img01 img').attr('src',`../image/section01/1_living_room/main01.png`)
+        },
+        onLeave: ()=>{
+            $('.fix_this_1').css('background','#2f433a')
+            $('#section01 .main_bg .main_img01 img').attr('src',`../image/section01/3_laundry/laundry_main.png`)
+            // $('#section01 .left_plant1 img').attr('src',`../image/section01/2_kitchen/lemon.png`)
         }
     });
     //('선택자',{구동},듀레이션(0~1))
-    sc01_scale03.to("#section01 .main_bg",{scale:1},0);
+    sc01_scale04.to("#section01 .main_bg",{scale:1},0);
+
+
+    let sc01_laundry_box = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_laundry_box,
+        trigger: "#section01", //기준
+        start: "20500px top", //기준점 브라우저
+        end: "21500px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_laundry_box.to("#section01 .left_laundry1",{x:0 ,y:0},0);
+
+
+
+
+
+
+
+    let sc01_scale05 = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_scale05,
+        trigger: "#section01", //기준
+        start: "22000px top", //기준점 브라우저
+        end: "25000px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_scale05.to("#section01 .main_bg",{scale:0.54},0);
+    sc01_scale05.to("#section01 .left_laundry1",{x:-300 ,y:-500},0);
+
+
+
+
+    
+
+    let sc01_scale06 = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_scale06,
+        trigger: "#section01", //기준
+        start: "25500px top", //기준점 브라우저
+        end: "28500px bottom", //기준점 브라우저
+        scrub: 1,
+        onEnterBack: ()=>{
+            $('.fix_this_1').css('background','#2f433a')
+            $('#section01 .main_bg .main_img01 img').attr('src',`../image/section01/3_laundry/laundry_main.png`)
+        },
+        onLeave: ()=>{
+            $('.fix_this_1').css('background','#0bb4e8')
+            $('#section01 .main_bg .main_img01 img').attr('src',`../image/section01/4_room/room_main.png`)
+            // $('#section01 .left_plant1 img').attr('src',`../image/section01/2_kitchen/lemon.png`)
+        }
+    });
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_scale06.to("#section01 .main_bg",{scale:1},0);
+
+    let room_box = gsap.timeline();
+    ScrollTrigger.create({
+        animation: room_box,
+        trigger: "#section01", //기준
+        start: "27500px top", //기준점 브라우저
+        end: "28500px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    room_box.to("#section01 .left_room1",{x:0 ,y:0},0);
+
+
+    let sc01_top_bottom = gsap.timeline();
+    ScrollTrigger.create({
+        animation: sc01_top_bottom,
+        trigger: "#section01", //기준
+        start: "29000px top", //기준점 브라우저
+        end: "32000px bottom", //기준점 브라우저
+        scrub: 1,
+    });
+
+    //('선택자',{구동},듀레이션(0~1))
+    sc01_top_bottom.to("#section01 .fix_top",{y:0},0);
+    sc01_top_bottom.to("#section01 .fix_bottom",{y:0},0);
+    sc01_top_bottom.to("#section01 .dim_bg",{opacity:1},0);
+
 
 
 
