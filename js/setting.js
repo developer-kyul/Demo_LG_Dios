@@ -30,6 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
     container.addListener(ScrollTrigger.update);
     ScrollTrigger.defaults({ scroller: stage });
 
+    //시작 위치 조절 -> y값 입력
     container.setPosition(0, 0); //x, y
     container.track.xAxis.element.remove();
     // Scrollbar.detachStyle();

@@ -1132,7 +1132,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    display: flex;
 }
 
 #section04 .xScroll04 .page01{
@@ -1142,33 +1141,148 @@
     background: hotpink;
 }
 
+/* 세로 스크롤 스타트 */
 #section04 .xScroll04 .page02{
-    width: 6806px;
+    width: 10806px;
     height: 100vh;
     position: relative;
-    background: dodgerblue;
+    background: #f3f3f3;
+}
+
+
+#section04 .xScroll04 .page02 .page02_box{
+        /* width: 1920px; */
+        height: 980px;
+        position: relative;
+        background-color: #f3f3f3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+
+#section04 .xScroll04 .page02 .page02_box .main_photo_new{
+    position: absolute;
+    left: 0;
+}
+
+#section04 .xScroll04 .page02 .page02_box .OBJET_COLLECTION{
+    position: absolute;
+    left: 1774px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
 
 
+#section04 .xScroll04 .page02 .page02_box .photo1{
+    position: absolute;
+    left: 2241px;
+    top: 521px;
+}
+#section04 .xScroll04 .page02 .page02_box .photo2{
+    position: absolute;
+    left: 2858px;
+    top: 99px;
+}
+#section04 .xScroll04 .page02 .page02_box .photo3{
+    position: absolute;
+    left: 3564px;
+    top: 326px;
+}
+#section04 .xScroll04 .page02 .page02_box .photo4{
+    position: absolute;
+    left: 4380px;
+    top: 436px;
+}
 
 
 
 
+#section04 .xScroll04 .page02 .page02_box .slide01{
+    position: absolute;
+    left: 5034px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+    background-color: #f3f3f3;
+
+}
+
+#section04 .xScroll04 .page02 .page02_box .slide02{
+    position: absolute;
+    left: 5484px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+
+}
+
+#section04 .xScroll04 .page02 .page02_box .slide03{
+    position: absolute;
+    left: 5914px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+
+}
+
+
+#section04 .xScroll04 .page02 .page02_box .shop_btn{
+    position: absolute;
+    left: 5814px;
+    top: 43.8%;
+}
 
 
 
+#section04 .xScroll04 .page02 .page02_box .footer{
+    position: absolute;
+    left: 6355px;
+    top: 0;
+
+    width: 480px;
+    height: 100%;
+    background-color: #313131;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
 
 
+#section04 .xScroll04 .page02 .page02_box .footer .footer_top{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px;
+}
+
+#section04 .xScroll04 .page02 .page02_box .footer .footer_top .arrow{
+    width: fit-content;
+    height: fit-content;
+}
 
 
-
-
-
-
-
-
-
-
-
+#section04 .xScroll04 .page02 .page02_box .footer .footer_top .sns{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+#section04 .xScroll04 .page02 .page02_box .footer .copy_text{
+    margin-bottom: 18px;
+}
