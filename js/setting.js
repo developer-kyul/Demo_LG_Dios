@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
     ScrollTrigger.defaults({ scroller: stage });
 
     //시작 위치 조절 -> y값 입력
-    container.setPosition(0, 86192); //x, y
+    container.setPosition(0, 0); //x, y
     container.track.xAxis.element.remove();
     // Scrollbar.detachStyle();
 
@@ -39,14 +39,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-    $('.startPoint').click(function () {
-
+    $('.arrow').click(function () {
         container.scrollTo(0, 0, 600, {
             callback: () => console.log('done!'),
             easing: easing.easeInOutCirc,
         });
-
-
     });
 
 
